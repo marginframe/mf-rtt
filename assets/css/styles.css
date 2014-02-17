@@ -4737,10 +4737,24 @@ h1, h2 {
     .sub-banner .columns {
       left: 0;
       right: 0; } }
+  @media only screen and (min-width:40.063em) {
+    .sub-banner:hover .sub-banner--image {
+      -webkit-box-shadow: 0 0 8px #000;
+      -moz-box-shadow: 0 0 8px #000;
+      box-shadow: 0 0 8px #000;
+      -webkit-transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      transform: scale(1.02); } }
 
 .sub-banner--image {
   max-height: 120px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 .sub-banner--caption {
   font-family: 'news_cycle';

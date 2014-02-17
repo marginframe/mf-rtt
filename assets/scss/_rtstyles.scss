@@ -273,10 +273,20 @@ min-height: 550px;
 			right: 0;
 		}
 	}
+	&:hover{
+		@media #{$medium-up}{
+			.sub-banner--image{
+				@include box-shadow(0, 0, 8px, #000);
+				@include transform(scale(1.02));
+			}
+		}
+	}
 }
 .sub-banner--image{
 	max-height: 120px;
 	overflow: hidden;
+	position: relative;
+	@include transition(all, 0.2s, ease);
 }
 .sub-banner--caption{
 	font-family: $font-en;

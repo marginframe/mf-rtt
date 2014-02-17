@@ -34,7 +34,7 @@
 //     -   triple-borders          - arguments: Color One: #3C3C3C, Color Two: #999999, Color Three: #000000, Radius: 0
 
 // BACKGROUND GRADIENT
-@mixin background-gradient($startColor: #3C3C3C, $endColor: #999999, $startOpacity: 0, $endOpacity: 1) {
+@mixin background-gradient($startColor: #3D3D3D, $endColor: #999999, $startOpacity: 0, $endOpacity: 1) {
     background-color: $startColor;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba($startColor, $startOpacity)), to(rgba($endColor, $endOpacity)));
     background: -webkit-linear-gradient(top, rgba($startColor, $startOpacity), rgba($endColor, $endOpacity));
