@@ -15,5 +15,8 @@ $("#main-banner .owl-carousel").owlCarousel({
   // itemsDesktopSmall : false,
   // itemsTablet: false,
   // itemsMobile : false
-
 });
+
+var fitContent = $('.test');
+var fitWrapper = $('.fit-wrapper');
+fit(fitContent, fitWrapper, { vAlign: fit.BOTTOM });

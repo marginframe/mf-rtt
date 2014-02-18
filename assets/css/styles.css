@@ -3755,7 +3755,7 @@ h2 {
   font-size: 1.875rem; }
 
 h3 {
-  font-size: 1.375rem; }
+  font-size: 1.5625rem; }
 
 h4 {
   font-size: 1.125rem; }
@@ -3906,7 +3906,7 @@ blockquote, blockquote p {
   h2 {
     font-size: 2.5rem; }
   h3 {
-    font-size: 1.6875rem; }
+    font-size: 1.875rem; }
   h4 {
     font-size: 1.4375rem; } }
 
@@ -4573,6 +4573,9 @@ th.hide-for-touch {
 [class$="-th"] {
   font-family: 'thaisans_neue' !important; }
 
+[class$="-en"] {
+  font-family: 'news_cycle' !important; }
+
 h1, h2 {
   font-family: 'news_cycle';
   font-weight: bold;
@@ -4580,10 +4583,14 @@ h1, h2 {
   color: #cea85b; }
 
 .button {
-  font-family: 'thaisans_neue'; }
+  font-family: 'thaisans_neue';
+  border: 1px solid #a78614; }
 
 .clearfix + .button-wrapper {
   margin-top: 15px; }
+
+h3 + p {
+  margin-top: 10px; }
 
 .left-off-canvas-toggle {
   position: absolute;
@@ -4671,7 +4678,9 @@ h1, h2 {
     position: relative; }
   @media only screen and (max-width: 40em) {
     #main-banner .owl-carousel {
-      padding-bottom: 120px; } }
+      min-height: 400px; }
+      #main-banner .owl-carousel .item {
+        min-height: 400px; } }
 
 .headline {
   position: absolute;
@@ -4723,6 +4732,17 @@ h1, h2 {
   margin-top: -420px;
   min-height: 550px;
   background: #ccc; }
+
+#small-flight-booking {
+  background: url(../images/flight.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 10px 0 5px; }
+  #small-flight-booking h3 {
+    color: #fff;
+    font-family: 'news_cycle'; }
+  #small-flight-booking p {
+    padding: 0 30px; }
 
 .sub-banner {
   background: #ccc;
@@ -4883,6 +4903,7 @@ h1, h2 {
         position: absolute;
         bottom: 0;
         width: 100%;
+        padding-bottom: 4px;
         background-color: #000;
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000000));
         background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000000);
@@ -4892,7 +4913,9 @@ h1, h2 {
         background: linear-gradient(top, rgba(0, 0, 0, 0), #000000);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#000', endColorStr='#000'); }
         .h-item .product-name a {
-          color: #fff; } }
+          color: #fff; }
+          .h-item .product-name a:hover {
+            color: #fff; } }
 
 @media only screen and (max-width:64em) {
   .large-h-item-wrapper {
@@ -4909,3 +4932,10 @@ h1, h2 {
     .large-h-item .product-name a {
       font-size: 1.3rem;
       line-height: 1.8rem; } }
+
+footer {
+  height: 300px;
+  background: #ccc; }
+
+.test {
+  background: #999; }
