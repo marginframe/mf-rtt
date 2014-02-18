@@ -4792,7 +4792,7 @@ h1, h2 {
   background: #ccc;
   margin-bottom: 10px;
   position: relative; }
-  @media only screen and (max-width: 40em) {
+  @media only screen and (min-width:64.063em) and (max-width:90em) {
     .h-item:hover .product-name a {
       color: #9d7c36; } }
   .h-item .image-wrapper {

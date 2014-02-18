@@ -333,7 +333,7 @@ $grid-space: 0.625rem/2;
 	background:#ccc;
 	margin-bottom: 10px;
 	position: relative;
-	@media #{$small-only}{
+	@media #{$large-only}{
 		&:hover{
 			.product-name{
 				a{
