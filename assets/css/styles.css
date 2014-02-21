@@ -4567,6 +4567,84 @@ th.hide-for-touch {
     margin: 0 !important;
     padding: 0 !important; } }
 
+.image-wrapper {
+  position: relative;
+  overflow: hidden; }
+  .image-wrapper img {
+    width: 100%; }
+  .image-wrapper .hover-content-wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.9);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3C3C3C',endColorstr='#3C3C3C');
+    zoom: 1;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    filter: alpha(opacity= (0));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0; }
+    @media only screen and (max-width: 40em) {
+      .image-wrapper .hover-content-wrapper {
+        display: none !important; } }
+  .image-wrapper .hover-content {
+    padding: 30px 20px 20px;
+    text-align: center; }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .image-wrapper .hover-content {
+        padding: 15px; } }
+    .image-wrapper .hover-content p {
+      font-family: 'thaisans_neue' !important;
+      line-height: 1.8rem;
+      font-size: 1.4rem;
+      margin-top: -10px;
+      -moz-transition: margin-top 0.2s linear;
+      -o-transition: margin-top 0.2s linear;
+      -webkit-transition: margin-top 0.2s linear;
+      -ms-transition: margin-top 0.2s linear;
+      transition: margin-top 0.2s linear; }
+      @media only screen and (min-width:40.063em) and (max-width:64em) {
+        .image-wrapper .hover-content p {
+          font-size: 1.2rem;
+          line-height: 1.4rem; } }
+      .image-wrapper .hover-content p a {
+        color: #000; }
+    .image-wrapper .hover-content .button {
+      margin-top: 20px;
+      -moz-transition: margin-top 0.2s linear;
+      -o-transition: margin-top 0.2s linear;
+      -webkit-transition: margin-top 0.2s linear;
+      -ms-transition: margin-top 0.2s linear;
+      transition: margin-top 0.2s linear; }
+  .image-wrapper:hover .hover-content-wrapper {
+    filter: alpha(opacity= (100));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    opacity: 1; }
+    .image-wrapper:hover .hover-content-wrapper p {
+      margin-top: 0; }
+    .image-wrapper:hover .hover-content-wrapper .button {
+      margin-top: 0; }
+
+.product-name {
+  background: #fff;
+  text-align: center;
+  font-family: 'thaisans_neue';
+  font-size: 1.3rem;
+  line-height: 1.8rem; }
+  .product-name a {
+    color: #333;
+    display: block;
+    width: 100%; }
+    .product-name a:hover {
+      color: #9d7c36; }
+
 .subheader {
   font-family: 'thaisans_neue'; }
 
@@ -4671,16 +4749,12 @@ h3 + p {
 
 #main-banner {
   width: 100%;
-  max-height: 460px;
-  background: #eee;
-  overflow: hidden; }
+  height: 460px;
+  background: #eee; }
   #main-banner .row {
     position: relative; }
-  @media only screen and (max-width: 40em) {
-    #main-banner .owl-carousel {
-      min-height: 400px; }
-      #main-banner .owl-carousel .item {
-        min-height: 400px; } }
+  #main-banner .main-slide {
+    height: 460px; }
 
 .headline {
   position: absolute;
@@ -4731,7 +4805,8 @@ h3 + p {
   position: relative;
   margin-top: -420px;
   min-height: 550px;
-  background: #ccc; }
+  background: #ccc;
+  z-index: 100; }
 
 #small-flight-booking {
   background: url(../images/flight.jpg) no-repeat;
@@ -4815,82 +4890,6 @@ h3 + p {
   @media only screen and (min-width:64.063em) and (max-width:90em) {
     .h-item:hover .product-name a {
       color: #9d7c36; } }
-  .h-item .image-wrapper {
-    position: relative;
-    overflow: hidden; }
-    .h-item .image-wrapper img {
-      width: 100%; }
-    .h-item .image-wrapper .hover-content-wrapper {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: transparent;
-      background-color: rgba(255, 255, 255, 0.9);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3C3C3C',endColorstr='#3C3C3C');
-      zoom: 1;
-      -moz-transition: opacity 0.2s linear;
-      -o-transition: opacity 0.2s linear;
-      -webkit-transition: opacity 0.2s linear;
-      -ms-transition: opacity 0.2s linear;
-      transition: opacity 0.2s linear;
-      filter: alpha(opacity= (0));
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      opacity: 0; }
-      @media only screen and (max-width: 40em) {
-        .h-item .image-wrapper .hover-content-wrapper {
-          display: none !important; } }
-    .h-item .image-wrapper .hover-content {
-      padding: 30px 20px 20px;
-      text-align: center; }
-      @media only screen and (min-width:40.063em) and (max-width:64em) {
-        .h-item .image-wrapper .hover-content {
-          padding: 15px; } }
-      .h-item .image-wrapper .hover-content p {
-        font-family: 'thaisans_neue' !important;
-        line-height: 1.8rem;
-        font-size: 1.4rem;
-        margin-top: -10px;
-        -moz-transition: margin-top 0.2s linear;
-        -o-transition: margin-top 0.2s linear;
-        -webkit-transition: margin-top 0.2s linear;
-        -ms-transition: margin-top 0.2s linear;
-        transition: margin-top 0.2s linear; }
-        @media only screen and (min-width:40.063em) and (max-width:64em) {
-          .h-item .image-wrapper .hover-content p {
-            font-size: 1.2rem;
-            line-height: 1.4rem; } }
-        .h-item .image-wrapper .hover-content p a {
-          color: #000; }
-      .h-item .image-wrapper .hover-content .button {
-        margin-top: 20px;
-        -moz-transition: margin-top 0.2s linear;
-        -o-transition: margin-top 0.2s linear;
-        -webkit-transition: margin-top 0.2s linear;
-        -ms-transition: margin-top 0.2s linear;
-        transition: margin-top 0.2s linear; }
-    .h-item .image-wrapper:hover .hover-content-wrapper {
-      filter: alpha(opacity= (100));
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-      opacity: 1; }
-      .h-item .image-wrapper:hover .hover-content-wrapper p {
-        margin-top: 0; }
-      .h-item .image-wrapper:hover .hover-content-wrapper .button {
-        margin-top: 0; }
-  .h-item .product-name {
-    background: #fff;
-    text-align: center;
-    font-family: 'thaisans_neue';
-    font-size: 1.3rem;
-    line-height: 1.8rem; }
-    .h-item .product-name a {
-      color: #333;
-      display: block;
-      width: 100%; }
-      .h-item .product-name a:hover {
-        color: #9d7c36; }
   @media only screen and (min-width:64.063em) and (max-width:90em) {
     .h-item {
       -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);

@@ -62,6 +62,80 @@ $small-medium: "#{$screen} and (max-width:#{upper-bound($medium-range)})";
 		padding: 0 !important;
 	}	
 }
+
+.image-wrapper{
+	position: relative;
+	overflow: hidden;
+	img{
+		width: 100%;
+	}
+	.hover-content-wrapper{
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		@include box-rgba(255,255,255,0.9);
+		@include transition(opacity, 0.2s, linear);
+		@include opacity(0);
+		@media #{$small-only}{
+			display: none !important;
+		}
+	}
+	.hover-content{
+		padding: 30px 20px 20px;
+		text-align: center;
+		@media #{$medium-only}{
+			padding: 15px;
+		}
+		p{
+			font-family: $font-th !important;
+			line-height: 1.8rem;
+			font-size: 1.4rem;
+			margin-top: -10px;
+			@include transition(margin-top, 0.2s, linear);
+			@media #{$medium-only}{
+				font-size: 1.2rem;
+				line-height: 1.4rem;
+			}
+			a{
+				color: #000;
+			}
+		}
+		.button{
+			margin-top: 20px;
+			@include transition(margin-top, 0.2s, linear);
+		}
+	}
+	&:hover{
+		.hover-content-wrapper{
+			@include opacity(1);
+			p{
+				margin-top: 0;
+			}
+			.button{
+				margin-top: 0;
+			}
+		}
+	}
+}
+.product-name{
+	background:#fff;
+	text-align: center;
+	font-family: $font-th;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+	a{
+		color: #333;
+		display: block;
+		width: 100%;
+		&:hover{
+			color: $secondary-color;
+		}
+	}
+}
+
 .subheader{
 	font-family: $font-th;
 }
@@ -198,19 +272,13 @@ h3+p{
 }
 #main-banner{
 	width: 100%;
-	max-height: 460px;
+	height: 460px;
 	background:#eee;
-	overflow: hidden;
 	.row{
 		position: relative;
 	}
-	@media #{$small-only}{
-		.owl-carousel{
-			min-height: 400px;
-			.item{
-				min-height: 400px;
-			}
-		}
+	.main-slide{
+		height: 460px;
 	}
 }
 .headline{
@@ -266,6 +334,7 @@ h3+p{
 	margin-top: -420px;
 min-height: 550px;
 	background:#ccc;
+	z-index: 100;
 }
 #small-flight-booking{
 	background:url(../images/flight.jpg) no-repeat;
@@ -334,6 +403,7 @@ min-height: 550px;
 	}
 }
 
+
 //---------------------------------------------------
 // Highlight Product Section
 //---------------------------------------------------
@@ -362,78 +432,6 @@ $grid-space: 0.625rem/2;
 				a{
 					color: $secondary-color;
 				}
-			}
-		}
-	}
-	.image-wrapper{
-		position: relative;
-		overflow: hidden;
-		img{
-			width: 100%;
-		}
-		.hover-content-wrapper{
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			@include box-rgba(255,255,255,0.9);
-			@include transition(opacity, 0.2s, linear);
-			@include opacity(0);
-			@media #{$small-only}{
-				display: none !important;
-			}
-		}
-		.hover-content{
-			padding: 30px 20px 20px;
-			text-align: center;
-			@media #{$medium-only}{
-				padding: 15px;
-			}
-			p{
-				font-family: $font-th !important;
-				line-height: 1.8rem;
-				font-size: 1.4rem;
-				margin-top: -10px;
-				@include transition(margin-top, 0.2s, linear);
-				@media #{$medium-only}{
-					font-size: 1.2rem;
-					line-height: 1.4rem;
-				}
-				a{
-					color: #000;
-				}
-			}
-			.button{
-				margin-top: 20px;
-				@include transition(margin-top, 0.2s, linear);
-			}
-		}
-		&:hover{
-			.hover-content-wrapper{
-				@include opacity(1);
-				p{
-					margin-top: 0;
-				}
-				.button{
-					margin-top: 0;
-				}
-			}
-		}
-	}
-	.product-name{
-		background:#fff;
-		text-align: center;
-		font-family: $font-th;
-		font-size: 1.3rem;
-		line-height: 1.8rem;
-		a{
-			color: #333;
-			display: block;
-			width: 100%;
-			&:hover{
-				color: $secondary-color;
 			}
 		}
 	}

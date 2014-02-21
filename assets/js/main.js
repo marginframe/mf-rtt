@@ -1,22 +1,10 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
-$("#main-banner .owl-carousel").owlCarousel({
-
-  navigation : false, // Show next and prev buttons
-  slideSpeed : 300,
-  paginationSpeed : 400,
-  singleItem:true,
-  pagination: false
-
-  // "singleItem:true" is a shortcut for:
-  // items : 1, 
-  // itemsDesktop : false,
-  // itemsDesktopSmall : false,
-  // itemsTablet: false,
-  // itemsMobile : false
+$(function() {
+  $('#main-banner .main-slide').superslides({
+    inherit_width_from: '.main-slide',
+    inherit_height_from: '.main-slide',
+    pagination: false
+  });
 });
-
-var fitContent = $('.test');
-var fitWrapper = $('.fit-wrapper');
-fit(fitContent, fitWrapper, { vAlign: fit.BOTTOM });
