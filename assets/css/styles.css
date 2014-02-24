@@ -40,7 +40,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -748,7 +748,7 @@ select {
       color: #222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1136,7 +1136,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2225,7 +2225,7 @@ label.error {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -2600,7 +2600,7 @@ ul.pagination {
     color: #eee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Helvetica, Arial, sans-serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -2608,7 +2608,7 @@ ul.pagination {
     color: #333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Helvetica, Arial, sans-serif; }
   .pricing-table .description {
     background-color: #fff;
     padding: 0.9375rem;
@@ -2743,7 +2743,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -2755,7 +2755,7 @@ dialog[open] {
     .side-nav li.active > a:first-child:not(.button) {
       color: #ddc28c;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: Helvetica, Arial, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -2864,7 +2864,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999; }
@@ -3080,7 +3080,7 @@ table {
       padding-right: 2rem;
       padding-bottom: 1.0625rem;
       padding-left: 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Helvetica, Arial, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover {
         background: #e1e1e1; }
@@ -3375,7 +3375,7 @@ meta.foundation-mq-topbar {
     color: #fff;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 0.8125rem;
     font-weight: normal;
     background: #333; }
@@ -3735,7 +3735,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: bold;
   color: #222;
@@ -4548,6 +4548,9 @@ th.hide-for-touch {
     .content-wrapper .subheader {
       font-size: 1.3rem; } }
 
+.off-canvas-wrap {
+  overflow: hidden !important; }
+
 .inline-center {
   margin-bottom: 0.7rem;
   text-align: center; }
@@ -4720,9 +4723,171 @@ h1, h2 {
 
 .flight-booking {
   position: relative;
-  margin-top: -420px;
-  min-height: 550px;
-  background: #ccc; }
+  margin-top: -420px; }
+  .flight-booking h4 {
+    background: #4b4646;
+    color: #FFF;
+    font-family: 'news_cycle';
+    font-size: 18px;
+    padding: 4px 10px 5px 14px;
+    margin-top: -1px;
+    border: solid 1px #7b7777;
+    margin-left: -1px;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .flight-booking h5 {
+    color: #363636;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #754c24; }
+  .flight-booking .content {
+    background: #FFF;
+    margin-top: -3px;
+    padding: 10px;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -moz-border-radius-topleft: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: solid 1px #e3e3e3; }
+    .flight-booking .content input[type=submit] {
+      background: #cea85b;
+      border: solid 1px #a78614;
+      color: #FFF;
+      height: 27px;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      margin-top: 15px;
+      font-family: 'news_cycle';
+      -webkit-transition: background-color 300ms ease-out;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
+      .flight-booking .content input[type=submit]:hover {
+        cursor: pointer;
+        background: #a78614; }
+  .flight-booking ul {
+    margin-left: 0; }
+    .flight-booking ul li {
+      list-style-type: none;
+      float: left; }
+      .flight-booking ul li label {
+        font-size: 12px;
+        line-height: 24px;
+        float: left; }
+      .flight-booking ul li input[type=text], .flight-booking ul li select {
+        float: left;
+        border: solid 1px #c6cbd0;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+  .flight-booking ul.sec_tabs {
+    margin-top: 13px; }
+    .flight-booking ul.sec_tabs li {
+      border-right: dotted 1px #a9a9a9;
+      padding-right: 10px;
+      padding-left: 10px;
+      height: 30px; }
+      .flight-booking ul.sec_tabs li:first-child {
+        padding-left: 0;
+        margin-left: 0; }
+      .flight-booking ul.sec_tabs li:last-child {
+        border-right: none;
+        padding-right: 0; }
+      .flight-booking ul.sec_tabs li a {
+        color: #666;
+        display: block;
+        height: 30px;
+        font-size: 14px;
+        font-family: 'news_cycle'; }
+        .flight-booking ul.sec_tabs li a:hover, .flight-booking ul.sec_tabs li a.active {
+          color: #a66c4b;
+          background: url(../images/arrow-down.png) no-repeat;
+          background-position: center 23px; }
+  .flight-booking .section_radio {
+    margin-top: 60px; }
+    .flight-booking .section_radio li {
+      border-right: none;
+      font-size: 12px;
+      float: left; }
+      .flight-booking .section_radio li input[type=radio] {
+        float: left;
+        margin-top: 5px; }
+      .flight-booking .section_radio li label {
+        margin-left: 4px;
+        margin-right: 15px; }
+  .flight-booking .section_destination {
+    margin-top: 99px; }
+    .flight-booking .section_destination ul li label {
+      margin-left: 0 !important;
+      margin-top: 12px;
+      color: #686d71; }
+    .flight-booking .section_destination ul li input[type=text] {
+      width: 176px;
+      margin-left: 6px;
+      padding: 12px;
+      height: 22px;
+      margin-top: 11px; }
+    .flight-booking .section_destination ul li:last-child label {
+      margin-top: -5px; }
+    .flight-booking .section_destination ul li:last-child input[type=text] {
+      margin-top: -6px;
+      margin-left: 21px; }
+  .flight-booking .section_travel_date {
+    margin-top: 10px; }
+    .flight-booking .section_travel_date li label {
+      width: 100%;
+      margin-top: 7px;
+      margin-bottom: 0; }
+    .flight-booking .section_travel_date li input[type=text] {
+      width: 90px;
+      height: 20px; }
+    .flight-booking .section_travel_date li img {
+      float: left;
+      margin: 2px 15px 0 7px; }
+    .flight-booking .section_travel_date li select {
+      width: 82px;
+      height: 22px;
+      font-size: 11px;
+      padding: 0; }
+    .flight-booking .section_travel_date li:last-child {
+      margin-top: -14px; }
+  .flight-booking .section_travelers {
+    margin-top: 10px; }
+    .flight-booking .section_travelers ul {
+      margin-top: 15px; }
+      .flight-booking .section_travelers ul li label {
+        margin-right: 25px; }
+      .flight-booking .section_travelers ul li select {
+        width: 85px;
+        height: 22px;
+        font-size: 11px;
+        padding: 0; }
+      .flight-booking .section_travelers ul li:last-child {
+        margin-top: -4px; }
+        .flight-booking .section_travelers ul li:last-child label {
+          margin-right: 16px; }
 
 .sub-banner {
   background: #ccc;
@@ -4909,3 +5074,167 @@ h1, h2 {
     .large-h-item .product-name a {
       font-size: 1.3rem;
       line-height: 1.8rem; } }
+
+.subscribe {
+  background: #e7e5d8; }
+  .subscribe span {
+    font-family: 'news_cycle';
+    float: left;
+    color: #7d7d7d;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 6px; }
+  .subscribe input[type=email] {
+    float: left;
+    font-size: 12px;
+    color: #7d7d7d;
+    padding: 15px;
+    height: 30px;
+    width: 68%;
+    margin-right: 3%;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+  .subscribe input[type=submit] {
+    font-family: 'news_cycle';
+    float: left;
+    background: #cea85b;
+    border: solid 1px #a78614;
+    color: #FFF;
+    height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    -webkit-transition: background-color 300ms ease-out;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+    .subscribe input[type=submit]:hover {
+      cursor: pointer;
+      background: #a78614; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .subscribe input[type=email] {
+      width: 64%; }
+    .subscribe input[type=submit] {
+      font-size: 12px; } }
+  @media only screen and (max-width:64em) {
+    .subscribe span {
+      float: none;
+      padding-bottom: 15px;
+      display: block; }
+    .subscribe input[type=email] {
+      width: 60%; } }
+
+.footer_wrapper {
+  background: #f3f3f3;
+  padding-top: 30px; }
+  .footer_wrapper h2, .footer_wrapper h3 {
+    color: #9d7c36;
+    font-size: 23px;
+    font-family: 'thaisans_neue';
+    font-weight: 300; }
+  .footer_wrapper ul {
+    list-style-type: none;
+    margin-left: 0 !important; }
+  .footer_wrapper a {
+    color: #636363;
+    -webkit-transition: background-color 300ms ease-out;
+    font-size: 12px; }
+    .footer_wrapper a:hover {
+      color: #c7b184; }
+  .footer_wrapper .contact {
+    font-size: 12px;
+    text-align: center;
+    color: #2a3740;
+    line-height: 18px;
+    padding-right: 30px; }
+    .footer_wrapper .contact a.logo {
+      width: 175px;
+      height: 0;
+      padding-top: 94px;
+      overflow: hidden;
+      display: block;
+      background: url(../images/logo-footer.png) no-repeat;
+      margin: auto; }
+    .footer_wrapper .contact h3 {
+      padding-top: 40px; }
+    .footer_wrapper .contact address {
+      font-style: normal; }
+    .footer_wrapper .contact .tel {
+      padding-top: 3px; }
+    .footer_wrapper .contact .fax {
+      padding-top: 3px; }
+    .footer_wrapper .contact .icon_sns ul {
+      width: 188px;
+      margin: auto !important; }
+    .footer_wrapper .contact .icon_sns li {
+      float: left;
+      padding-right: 12px; }
+      .footer_wrapper .contact .icon_sns li:last-child {
+        padding-right: 0; }
+      .footer_wrapper .contact .icon_sns li a {
+        width: 38px;
+        height: 0;
+        padding-top: 38px;
+        background: #c7b184;
+        overflow: hidden;
+        display: block;
+        -moz-border-radius: 24px;
+        -webkit-border-radius: 24px;
+        border-radius: 24px; }
+        .footer_wrapper .contact .icon_sns li a:hover {
+          background: #a78614; }
+  .footer_wrapper .footer_nav ul li a {
+    line-height: 26px; }
+  .footer_wrapper .destination {
+    background: #f2f0e9;
+    padding: 15px 10px;
+    border: solid 1px #FFF; }
+    .footer_wrapper .destination h2, .footer_wrapper .destination h3, .footer_wrapper .destination h4 {
+      font-size: 21px;
+      color: #7e796d;
+      line-height: 22px;
+      font-family: 'news_cycle';
+      font-weight: 600;
+      text-transform: uppercase; }
+    .footer_wrapper .destination h3, .footer_wrapper .destination h4 {
+      color: #9d7c36;
+      font-size: 15px;
+      font-weight: normal; }
+    .footer_wrapper .destination input[type=search] {
+      padding: 10px;
+      height: 25px; }
+    .footer_wrapper .destination button {
+      line-height: 0;
+      height: 25px; }
+    .footer_wrapper .destination ul {
+      line-height: 18px;
+      float: left;
+      margin-right: 15%; }
+  .footer_wrapper .end_footer {
+    background: #FFF; }
+    .footer_wrapper .end_footer ul li {
+      float: left;
+      padding-top: 9px;
+      margin-right: 2%; }
+    .footer_wrapper .end_footer .permit {
+      text-align: right;
+      font-size: 12px;
+      padding: 20px 0 20px 0;
+      color: #2a3740; }
+  @media only screen and (max-width: 40em) {
+    .footer_wrapper .contact {
+      padding-right: 0 !important; }
+      .footer_wrapper .contact .icon_sns {
+        padding-bottom: 60px; }
+    .footer_wrapper .footer_nav {
+      display: none; }
+    .footer_wrapper .end_footer ul {
+      margin-left: 15% !important; }
+      .footer_wrapper .end_footer ul li {
+        margin-right: 4%; }
+        .footer_wrapper .end_footer ul li img {
+          width: 100%; }
+    .footer_wrapper .end_footer .permit {
+      text-align: center; } }
