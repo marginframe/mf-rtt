@@ -5247,6 +5247,14 @@ h3 + p {
       font-size: 12px;
       padding: 20px 0 20px 0;
       color: #2a3740; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .footer_wrapper .contact {
+      padding-right: 0 !important; }
+      .footer_wrapper .contact .icon_sns {
+        padding-bottom: 60px; }
+    .footer_wrapper .destination ul {
+      margin-right: 10%;
+      min-height: 190px; } }
   @media only screen and (max-width: 40em) {
     .footer_wrapper .contact {
       padding-right: 0 !important; }

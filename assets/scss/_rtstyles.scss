@@ -840,7 +840,19 @@ $grid-space: 0.625rem/2;
 			.permit{ text-align:right; font-size:12px; padding:20px 0 20px 0; color:#2a3740;}
 		}
 
+	@media #{$medium-only} { 
+	
+		.contact{
+			padding-right: 0 !important;
+			.icon_sns{padding-bottom:60px;}
+		}
 
+		.destination{
+			ul{margin-right:10%; min-height:190px;}
+		}
+
+
+	}
 	@media #{$small-only} { 
 		.contact{
 			padding-right: 0 !important;
