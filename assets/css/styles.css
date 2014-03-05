@@ -4525,6 +4525,13 @@ th.hide-for-touch {
   src: url('../fonts/thaisansneue-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/thaisansneue-bold-webfont.woff') format('woff'), url('../fonts/thaisansneue-bold-webfont.ttf') format('truetype'), url('../fonts/thaisansneue-bold-webfont.svg#thaisans_neue') format('svg'); }
 
 @font-face {
+  font-family: thaisansneue-semibold;
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/thaisansneue-semibold-webfont.eot');
+  src: url('../fonts/thaisansneue-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/thaisansneue-semibold-webfont.woff') format('woff'), url('../fonts/thaisansneue-semibold-webfont.ttf') format('truetype'), url('../fonts/thaisansneue-semibold-webfont.svg#thaisansneue-semibold') format('svg'); }
+
+@font-face {
   font-family: news_cycle;
   font-weight: normal;
   font-style: normal;
@@ -4814,7 +4821,7 @@ h3 + p {
   .header--nav li {
     font-size: 15px;
     padding-bottom: 2px; }
-    .header--nav li:hover {
+    .header--nav li:hover, .header--nav li .active {
       border-bottom: 2px solid #cea85b;
       padding-bottom: 0; }
   @media only screen and (max-width:64em) {
@@ -5183,6 +5190,7 @@ h3 + p {
       line-height: 1.8rem; } }
 
 .subscribe {
+  padding-top: 10px;
   background: #e7e5d8; }
   .subscribe span {
     font-family: 'news_cycle';
@@ -5348,3 +5356,741 @@ h3 + p {
     display: none; }
   .end_footer .permit {
     text-align: center; } }
+=======
+      background: url(../images/logo-footer.png) no-repeat;
+      margin: auto; }
+    .footer_wrapper .contact h3 {
+      padding-top: 40px; }
+    .footer_wrapper .contact address {
+      font-style: normal; }
+    .footer_wrapper .contact .tel {
+      padding-top: 3px; }
+    .footer_wrapper .contact .fax {
+      padding-top: 3px; }
+    .footer_wrapper .contact .icon_sns ul {
+      width: 188px;
+      margin: auto !important; }
+    .footer_wrapper .contact .icon_sns li {
+      float: left;
+      padding-right: 12px; }
+      .footer_wrapper .contact .icon_sns li:last-child {
+        padding-right: 0; }
+      .footer_wrapper .contact .icon_sns li a {
+        width: 38px;
+        height: 0;
+        padding-top: 38px;
+        background: #c7b184;
+        overflow: hidden;
+        display: block;
+        -moz-border-radius: 24px;
+        -webkit-border-radius: 24px;
+        border-radius: 24px; }
+        .footer_wrapper .contact .icon_sns li a:hover {
+          background: #a78614; }
+  .footer_wrapper .footer_nav ul li a {
+    line-height: 26px; }
+  .footer_wrapper .destination {
+    background: #f2f0e9;
+    padding: 15px 10px;
+    border: solid 1px #FFF; }
+    .footer_wrapper .destination h2, .footer_wrapper .destination h3, .footer_wrapper .destination h4 {
+      font-size: 21px;
+      color: #7e796d;
+      line-height: 22px;
+      font-family: 'news_cycle';
+      font-weight: 600;
+      text-transform: uppercase; }
+    .footer_wrapper .destination h3, .footer_wrapper .destination h4 {
+      color: #9d7c36;
+      font-size: 15px;
+      font-weight: normal; }
+    .footer_wrapper .destination input[type=search] {
+      padding: 10px;
+      height: 25px; }
+    .footer_wrapper .destination button {
+      line-height: 0;
+      height: 25px; }
+    .footer_wrapper .destination ul {
+      line-height: 18px;
+      float: left;
+      margin-right: 15%; }
+  .footer_wrapper .end_footer {
+    background: #FFF; }
+    .footer_wrapper .end_footer ul li {
+      float: left;
+      padding-top: 9px;
+      margin-right: 2%; }
+    .footer_wrapper .end_footer .permit {
+      text-align: right;
+      font-size: 12px;
+      padding: 20px 0 20px 0;
+      color: #2a3740; }
+  @media only screen and (min-width:40.063em) and (max-width:64em) {
+    .footer_wrapper .contact {
+      padding-right: 0 !important; }
+      .footer_wrapper .contact .icon_sns {
+        padding-bottom: 60px; }
+    .footer_wrapper .destination ul {
+      margin-right: 10%;
+      min-height: 190px; } }
+  @media only screen and (max-width: 40em) {
+    .footer_wrapper .contact {
+      padding-right: 0 !important; }
+      .footer_wrapper .contact .icon_sns {
+        padding-bottom: 60px; }
+    .footer_wrapper .footer_nav {
+      display: none; }
+    .footer_wrapper .end_footer ul {
+      margin-left: 15% !important; }
+      .footer_wrapper .end_footer ul li {
+        margin-right: 4%; }
+        .footer_wrapper .end_footer ul li img {
+          width: 100%; }
+    .footer_wrapper .end_footer .permit {
+      text-align: center; } }
+
+.breadcrumb {
+  border-top: solid 1px #f3f3f3;
+  padding: 14px 0 14px 47px;
+  font-family: 'news_cycle';
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #cea85b; }
+  .breadcrumb span {
+    padding: 0 13px 0 13px;
+    color: #666; }
+  .breadcrumb a {
+    color: #cacac9; }
+    .breadcrumb a:hover {
+      color: #666 !important; }
+
+.section_landingpackage {
+  background: #f2f0e9;
+  padding-bottom: 35px; }
+
+.side_bar {
+  position: relative;
+  margin-top: 20px;
+  height: auto !important;
+  background: #FFF;
+  border: solid 1px #d1d0cf;
+  z-index: 100;
+  -webkit-border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px; }
+  .side_bar h2 {
+    background: #4b4646;
+    color: #FFF;
+    font-size: 18px;
+    padding: 4px 10px 5px 14px;
+    margin-top: -1px;
+    border: solid 1px #7b7777;
+    margin-left: -1px;
+    font-family: 'news_cycle';
+    font-weight: normal;
+    text-transform: none;
+    -webkit-border-top-left-radius: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-topleft: 2px;
+    -moz-border-radius-topright: 2px;
+    -moz-border-radius-bottomright: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .side_bar h3 {
+    background: #eeeff2;
+    padding: 7px 10px 7px 16px;
+    font-family: 'thaisans_neue';
+    color: #333;
+    font-size: 18px; }
+  .side_bar .timetable {
+    padding-top: 10px; }
+    .side_bar .timetable h3 {
+      font-family: Tahoma;
+      font-size: 14px;
+      color: #9a6c14;
+      padding-left: 40px;
+      background: none;
+      text-transform: uppercase; }
+    .side_bar .timetable ul li {
+      list-style-type: none;
+      font-size: 12px;
+      color: #3f3f3f; }
+  .side_bar .select {
+    width: 87%;
+    margin: auto !important; }
+    .side_bar .select select {
+      margin-top: 16px;
+      font-family: 'thaisans_neue';
+      color: #2a3740;
+      font-size: 18px;
+      margin-bottom: 0;
+      height: 27px;
+      padding: 0;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px; }
+      .side_bar .select select:last-child {
+        margin-bottom: 16px; }
+  .side_bar .list_text {
+    height: 102px;
+    font-family: Tahoma;
+    overflow-x: hidden;
+    padding: 15px 0 0; }
+    .side_bar .list_text li {
+      list-style-type: none;
+      font-size: 12px;
+      color: #333;
+      padding-bottom: 10px; }
+      .side_bar .list_text li:last-child {
+        padding-bottom: 0; }
+      .side_bar .list_text li a {
+        width: 16px;
+        height: 0;
+        padding-top: 16px;
+        display: block;
+        overflow: hidden;
+        background: url(../images/check-box.png) no-repeat;
+        float: left;
+        margin-right: 15px;
+        margin-top: 1px; }
+  .side_bar .noscoll {
+    font-family: Tahoma;
+    padding: 15px 0 0 0; }
+    .side_bar .noscoll li {
+      list-style-type: none;
+      font-size: 12px;
+      color: #333;
+      padding-bottom: 10px; }
+      .side_bar .noscoll li:last-child {
+        padding-bottom: 0; }
+      .side_bar .noscoll li a {
+        width: 16px;
+        height: 0;
+        padding-top: 16px;
+        display: block;
+        overflow: hidden;
+        background: url(../images/check-box.png) no-repeat;
+        float: left;
+        margin-right: 15px;
+        margin-top: 1px; }
+  .side_bar .more_info {
+    padding: 7px 0 0; }
+    .side_bar .more_info li {
+      font-family: 'thaisans_neue';
+      font-size: 18px;
+      list-style-type: none;
+      background: url(../images/icon-more-info.png) no-repeat; }
+      .side_bar .more_info li.howto_booking {
+        background-position: 2px 8px;
+        padding-left: 35px; }
+      .side_bar .more_info li.contact {
+        background-position: 2px -22px;
+        padding-left: 35px; }
+  .side_bar .extras {
+    height: 279px;
+    overflow-x: hidden;
+    padding: 15px 0 0; }
+    .side_bar .extras li {
+      font-family: 'thaisans_neue';
+      font-size: 18px;
+      height: 37px;
+      margin-bottom: 15px;
+      list-style-type: none;
+      background: url(../images/icon-extras.png) no-repeat;
+      line-height: 18px;
+      padding-top: 5px; }
+      .side_bar .extras li.ticket {
+        background-position: 2px 5px;
+        padding-left: 58px; }
+      .side_bar .extras li.rail {
+        background-position: 2px -44px;
+        padding-left: 58px; }
+      .side_bar .extras li.addtour {
+        background-position: 2px -88px;
+        padding-left: 58px; }
+      .side_bar .extras li.insurance {
+        background-position: 2px -136px;
+        padding-left: 58px; }
+      .side_bar .extras li.phone_card {
+        background-position: 2px -187px;
+        padding-left: 58px; }
+  .side_bar .collapse {
+    padding: 18px 0 0;
+    width: 87% !important;
+    margin: auto !important; }
+    .side_bar .collapse input[type=text] {
+      border-right: 1px solid #FFF;
+      font-size: 18px;
+      font-family: 'thaisans_neue';
+      height: 24px;
+      -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      -webkit-border-top-left-radius: 2px;
+      -webkit-border-top-right-radius: 2px;
+      -webkit-border-bottom-right-radius: 0;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-radius-topleft: 2px;
+      -moz-border-radius-topright: 2px;
+      -moz-border-radius-bottomright: 0;
+      -moz-border-radius-bottomleft: 0;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0; }
+    .side_bar .collapse button {
+      background: #FFF;
+      color: #666;
+      border: 1px solid #ccc;
+      border-left: 0px;
+      margin-left: -2px;
+      height: 24px;
+      padding: 0;
+      line-height: 0;
+      -webkit-border-top-left-radius: 0px;
+      -webkit-border-top-right-radius: 0px;
+      -webkit-border-bottom-right-radius: 2;
+      -webkit-border-bottom-left-radius: 2;
+      -moz-border-radius-topleft: 0px;
+      -moz-border-radius-topright: 0px;
+      -moz-border-radius-bottomright: 2;
+      -moz-border-radius-bottomleft: 2;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 2;
+      border-bottom-left-radius: 2; }
+
+@media only screen and (max-width: 40em) {
+  .side_bar {
+    display: none; } }
+
+.right_content {
+  margin-top: 20px;
+  margin-left: 15px; }
+  .right_content .slide_landing_packages {
+    position: relative;
+    width: 100%; }
+    .right_content .slide_landing_packages .icon_tours {
+      width: 170px;
+      height: 36px;
+      position: absolute;
+      top: 10px;
+      left: 10px; }
+  .right_content .banner {
+    margin-bottom: 35px !important; }
+  .right_content .tour_rec {
+    text-align: center;
+    color: #363636;
+    background: #FFF; }
+    .right_content .tour_rec img {
+      min-width: 100%; }
+    .right_content .tour_rec a {
+      color: #363636 !important; }
+      .right_content .tour_rec a .text_area {
+        padding: 20px; }
+        .right_content .tour_rec a .text_area h2 {
+          font-family: 'news_cycle';
+          font-weight: bold;
+          font-size: 25px !important;
+          color: #363636 !important;
+          padding-top: 5px;
+          text-transform: none; }
+        .right_content .tour_rec a .text_area p {
+          font-family: 'thaisans_neue';
+          font-size: 18px;
+          line-height: 22px;
+          padding-top: 7px;
+          color: #363636 !important; }
+    @media only screen and (min-width:40.063em) and (max-width:64em) {
+      .right_content .tour_rec img {
+        min-height: 142px; }
+      .right_content .tour_rec a .text_area {
+        max-height: 142px;
+        padding: 10px; } }
+    @media only screen and (max-width: 40em) {
+      .right_content .tour_rec a .text_area {
+        padding-top: 7%;
+        padding-bottom: 10%; }
+        .right_content .tour_rec a .text_area h2 {
+          font-size: 120% !important; }
+        .right_content .tour_rec a .text_area p {
+          display: none; } }
+
+.packages_tours {
+  margin-top: 37px;
+  margin-bottom: 35px;
+  font-family: 'thaisans_neue'; }
+  .packages_tours h2 {
+    font-size: 24px;
+    margin-bottom: 20px; }
+  .packages_tours ul {
+    margin-left: 0 !important; }
+    .packages_tours ul .image-wrapper .hover-content p {
+      line-height: 18px !important;
+      font-size: 18px; }
+    .packages_tours ul .prd_des {
+      background: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin-top: -3px;
+      padding-bottom: 5px; }
+      .packages_tours ul .prd_des h3 {
+        font-family: 'thaisansneue-semibold';
+        font-size: 20px;
+        padding-top: 7px; }
+      .packages_tours ul .prd_des span {
+        display: block; }
+    .packages_tours ul .marketing .price {
+      color: #FFF;
+      font-size: 20px;
+      width: 70%;
+      background: #d8c18d;
+      height: 33px; }
+      .packages_tours ul .marketing .price span {
+        font-size: 14px;
+        padding: 0 5px 0 7px; }
+    .packages_tours ul .marketing .booking {
+      width: 30%;
+      height: 33px;
+      background: #c4a66e;
+      font-size: 16px;
+      padding: 5px 0;
+      display: block;
+      color: #FFF !important; }
+      .packages_tours ul .marketing .booking i {
+        padding-left: 5px;
+        padding-right: 2px;
+        color: #7a540c;
+        text-shadow: 2px 2px 5px rgba(207, 186, 148, 0.4); }
+      .packages_tours ul .marketing .booking:hover {
+        background: #ab8640; }
+
+@media only screen and (max-width: 40em) {
+  .right_content {
+    margin-left: 0; } }
+
+a.viewmore {
+  font-size: 21px;
+  display: block;
+  width: 155px;
+  padding: 7px;
+  margin: 15px auto; }
+
+.section_show_prd {
+  background: #f3f0e9;
+  -webkit-box-shadow: inset -8px 10px 2px -9px #e9e9e1;
+  -moz-box-shadow: inset -8px 10px 2px -9px #e9e9e1;
+  box-shadow: inset -8px 10px 2px -9px #e9e9e1; }
+
+.slides_exprd img {
+  max-width: 100%; }
+@media only screen and (max-width: 40em) {
+  .slides_exprd img {
+    min-width: 100%; } }
+
+.detail_prd_section {
+  margin-left: 10px;
+  padding-top: 5px; }
+  .detail_prd_section h1 {
+    font-family: 'thaisans_neue';
+    font-size: 36px;
+    font-weight: normal; }
+  .detail_prd_section .star i {
+    color: #f9c517; }
+  .detail_prd_section .star i.grey {
+    color: #cecece; }
+  .detail_prd_section .star a {
+    font-size: 12px;
+    margin-left: 14px; }
+  .detail_prd_section .prd_code {
+    text-transform: uppercase;
+    color: #44413a;
+    font-size: 24px;
+    text-align: right;
+    font-family: 'thaisans_neue'; }
+    .detail_prd_section .prd_code span {
+      color: #caa55e;
+      padding-right: 7px; }
+  .detail_prd_section article {
+    line-height: 20px;
+    font-size: 13px;
+    color: #65625b;
+    padding: 12px 0;
+    border-bottom: solid 1px #d7c295; }
+  .detail_prd_section .main_data {
+    margin-top: 15px; }
+    .detail_prd_section .main_data ul {
+      margin-left: 0; }
+      .detail_prd_section .main_data ul li {
+        list-style-type: none;
+        font-size: 13px;
+        color: #65625b;
+        width: 100%; }
+        .detail_prd_section .main_data ul li div.topic {
+          color: #c7a25c;
+          width: 13%; }
+        .detail_prd_section .main_data ul li div.answer {
+          width: 87%; }
+          .detail_prd_section .main_data ul li div.answer.name_hotel {
+            color: #efa027; }
+        @media only screen and (max-width: 40em) {
+          .detail_prd_section .main_data ul li div.topic {
+            width: 100%; }
+          .detail_prd_section .main_data ul li div.answer {
+            width: 100%; } }
+  .detail_prd_section .service {
+    float: left;
+    margin-top: 35px; }
+    .detail_prd_section .service span {
+      font-size: 13px;
+      font-family: Tahoma;
+      color: #434039; }
+    .detail_prd_section .service ul {
+      margin-top: 5px;
+      margin-left: 0; }
+      .detail_prd_section .service ul li {
+        list-style-type: none;
+        float: left;
+        margin-right: 20px; }
+  @media only screen and (max-width: 40em) {
+    .detail_prd_section .service {
+      width: 100%;
+      float: none; } }
+  .detail_prd_section .start_price {
+    float: right;
+    margin-top: 45px;
+    color: #44413a;
+    width: 145px; }
+    .detail_prd_section .start_price span {
+      font-size: 13px;
+      font-family: Tahoma;
+      color: #434039;
+      display: block; }
+    .detail_prd_section .start_price .airport {
+      font-weight: normal;
+      font-size: 12px;
+      text-align: right;
+      color: #ef9c18; }
+    .detail_prd_section .start_price .price-line {
+      float: right;
+      width: 100%;
+      margin-top: -20px;
+      margin-bottom: -20px; }
+      .detail_prd_section .start_price .price-line p {
+        text-align: right;
+        font-family: Browallia New;
+        margin-bottom: 0; }
+        .detail_prd_section .start_price .price-line p.icon {
+          font-size: 27px;
+          float: right;
+          margin-right: 10px;
+          margin-top: 20px; }
+        .detail_prd_section .start_price .price-line p.price {
+          font-weight: bold;
+          float: right;
+          font-size: 60px;
+          font-weight: bold; }
+  @media only screen and (max-width: 40em) {
+    .detail_prd_section .start_price {
+      float: none; } }
+
+@media only screen and (min-width:40.063em) {
+  .detail_prd_section {
+    margin-left: 0;
+    float: none;
+    width: 100%; }
+    .detail_prd_section .start_price {
+      float: left; } }
+
+.fav {
+  margin-top: 60px;
+  float: left; }
+  .fav ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 20px;
+    text-align: center; }
+    .fav ul li a {
+      color: #826c3b;
+      font-size: 12px; }
+
+@media only screen and (max-width: 40em) {
+  .fav {
+    width: 100%;
+    padding-bottom: 20px; } }
+
+.booking_right {
+  margin-top: 20px;
+  float: right;
+  width: 50%; }
+  .booking_right .quantity {
+    float: left;
+    width: 60%; }
+    .booking_right .quantity input[type=button] {
+      width: 26px;
+      height: 50px;
+      color: #858585;
+      font-size: 16px;
+      float: right;
+      background: #FFF !important;
+      border: 0;
+      cursor: pointer; }
+      .booking_right .quantity input[type=button]:hover {
+        background: #fafafa !important; }
+    .booking_right .quantity input[type=text] {
+      float: right;
+      width: 30px !important;
+      height: 50px;
+      color: #000;
+      font-size: 20px;
+      border: 0;
+      box-shadow: none; }
+  .booking_right button[type=submit] {
+    float: right;
+    background: #cc9f44;
+    border: #a68713;
+    -webkit-box-shadow: inset 0px -1px 3px 1px #a78613;
+    -moz-box-shadow: inset 0px -1px 3px 1px #a78613;
+    box-shadow: inset 0px -1px 3px 1px #a78613;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px; }
+    .booking_right button[type=submit] span {
+      font-size: 20px; }
+    .booking_right button[type=submit]:hover {
+      background: #ae7f21; }
+
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  .booking_right {
+    float: left;
+    width: 100%;
+    margin-left: 20px; }
+    .booking_right .quantity {
+      width: auto; }
+    .booking_right button[type=submit] {
+      margin-left: 20px;
+      float: left; } }
+
+@media only screen and (max-width: 40em) {
+  .booking_right {
+    float: none;
+    width: 100%;
+    float: none;
+    margin-top: 20px; }
+    .booking_right .quantity {
+      float: left;
+      width: 82px;
+      margin-left: 20px; }
+    .booking_right button[type=submit] {
+      float: left;
+      margin-left: 20px; } }
+
+.sns_btn {
+  float: left;
+  width: 50%;
+  height: 25px;
+  margin-left: 20px; }
+  .sns_btn .twitter-share-button {
+    margin-left: 15px; }
+
+@media only screen and (max-width: 40em) {
+  .sns_btn, .mail_print {
+    width: 100%;
+    float: none !important;
+    padding-bottom: 60px; } }
+
+.mail_print {
+  width: 50%;
+  float: right;
+  margin-top: -30px; }
+  .mail_print li {
+    list-style-type: none;
+    float: right;
+    margin-right: 20px; }
+    .mail_print li a {
+      font-size: 12px;
+      color: #816c37; }
+
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  .sns_btn {
+    float: none;
+    width: 100%; } }
+
+.section_show_prd_detail {
+  background: #FFF;
+  margin-top: 20px; }
+  .section_show_prd_detail .tabs dd {
+    text-transform: uppercase;
+    border-right: 1px dotted #a7a7a7; }
+    .section_show_prd_detail .tabs dd:last-child {
+      border-right: none; }
+    .section_show_prd_detail .tabs dd a {
+      padding-left: 20px;
+      padding-right: 20px;
+      background: #FFF !important;
+      font-family: 'news_cycle'; }
+      .section_show_prd_detail .tabs dd a.first {
+        padding-left: 0 !important; }
+    @media only screen and (max-width: 40em) {
+      .section_show_prd_detail .tabs dd a {
+        font-size: 14px;
+        padding: 7px !important; }
+        .section_show_prd_detail .tabs dd a.first {
+          padding-left: 5px !important; } }
+    .section_show_prd_detail .tabs dd.active a, .section_show_prd_detail .tabs dd a:hover {
+      color: #885e12; }
+
+.tabs-content {
+  margin-top: 30px; }
+  .tabs-content .date {
+    float: left;
+    font-family: 'thaisans_neue';
+    font-size: 21px;
+    padding: 12px 10px;
+    color: #FFF;
+    background: #cea95b;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 20px; }
+  .tabs-content .table {
+    float: left;
+    width: 85%;
+    margin-bottom: 20px; }
+    .tabs-content .table table {
+      border: 1px dotted #969696;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
+      width: 100%; }
+      .tabs-content .table table tr td {
+        border: 1px dotted #969696;
+        background: #FFF; }
+        .tabs-content .table table tr td.time {
+          border-left: none;
+          border-top: none;
+          width: 17%;
+          padding: 12px; }
+        .tabs-content .table table tr td.detail {
+          border-left: none;
+          border-top: none;
+          border-right: none; }
+          .tabs-content .table table tr td.detail a {
+            text-decoration: underline; }
+            .tabs-content .table table tr td.detail a:hover {
+              text-decoration: none; }
+>>>>>>> origin/feature_pete
