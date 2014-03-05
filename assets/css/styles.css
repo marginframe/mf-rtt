@@ -4538,6 +4538,84 @@ th.hide-for-touch {
   src: url('../fonts/newscycle_bold-webfont.eot');
   src: url('../fonts/newscycle_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/newscycle_bold-webfont.woff') format('woff'), url('../fonts/newscycle_bold-webfont.ttf') format('truetype'), url('../fonts/newscycle_bold-webfont.svg#news_cycle') format('svg'); }
 
+@font-face {
+  font-family: Flaticon;
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/flaticon.eot');
+  src: url('../fonts/flaticon.eot?#iefix') format('embedded-opentype'), url('../fonts/flaticon.woff') format('woff'), url('../fonts/flaticon.ttf') format('truetype'), url('../fonts/flaticon.svg#Flaticon') format('svg'); }
+
+[class*=" flaticon-"]:after, [class*=" flaticon-"]:before, [class^=flaticon-]:after, [class^=flaticon-]:before {
+  font-family: 'Flaticon';
+  font-size: 0.8rem;
+  font-style: normal; }
+
+.flaticon-airplane21:before {
+  content: "\e000"; }
+
+.flaticon-big61:before {
+  content: "\e001"; }
+
+.flaticon-blogger2:before {
+  content: "\e002"; }
+
+.flaticon-boy3:before {
+  content: "\e003"; }
+
+.flaticon-chevron2:before {
+  content: "\e004"; }
+
+.flaticon-chevron5:before {
+  content: "\e005"; }
+
+.flaticon-close13:before {
+  content: "\e006"; }
+
+.flaticon-compare1:before {
+  content: "\e007"; }
+
+.flaticon-entry:before {
+  content: "\e008"; }
+
+.flaticon-facebook3:before {
+  content: "\e009"; }
+
+.flaticon-hotel18:before {
+  content: "\e00a"; }
+
+.flaticon-instagram3:before {
+  content: "\e00b"; }
+
+.flaticon-luxury3:before {
+  content: "\e00c"; }
+
+.flaticon-map15:before {
+  content: "\e00d"; }
+
+.flaticon-page45:before {
+  content: "\e00e"; }
+
+.flaticon-phone13:before {
+  content: "\e00f"; }
+
+.flaticon-premium:before {
+  content: "\e010"; }
+
+.flaticon-print4:before {
+  content: "\e011"; }
+
+.flaticon-search2:before {
+  content: "\e012"; }
+
+.flaticon-search4:before {
+  content: "\e013"; }
+
+.flaticon-social:before {
+  content: "\e014"; }
+
+.flaticon-travel11:before {
+  content: "\e015"; }
+
 .content-wrapper {
   padding: 40px 0 30px; }
   .content-wrapper .subheader + .row {
@@ -4758,6 +4836,9 @@ h3 + p {
     position: relative; }
   #main-banner .main-slide {
     height: 460px; }
+
+.slides-navigation i:before {
+  font-size: 2.4em !important; }
 
 .headline {
   position: absolute;
@@ -4985,6 +5066,8 @@ h3 + p {
   background-size: cover;
   color: #fff;
   padding: 10px 0 5px; }
+  #small-flight-booking h3 {
+    color: #fff; }
 
 .sub-banner {
   background: #ccc;
@@ -5167,98 +5250,101 @@ h3 + p {
     font-size: 12px; }
     .footer_wrapper a:hover {
       color: #c7b184; }
-  .footer_wrapper .contact {
+
+.contact {
+  text-align: center;
+  color: #2a3740;
+  line-height: 18px;
+  padding-right: 30px; }
+  .contact .contact-info li {
     font-size: 12px;
-    text-align: center;
-    color: #2a3740;
-    line-height: 18px;
-    padding-right: 30px; }
-    .footer_wrapper .contact a.logo {
-      width: 175px;
-      height: 0;
-      padding-top: 94px;
-      overflow: hidden;
+    padding-top: 5px; }
+    .contact .contact-info li i:before {
+      margin-right: 6px; }
+  .contact .flaticon-map15:before {
+    font-size: 1rem; }
+  .contact .flaticon-close13:before {
+    font-size: 0.6rem; }
+  .contact a.logo {
+    width: 175px;
+    height: 0;
+    padding-top: 94px;
+    overflow: hidden;
+    display: block;
+    background: url(../images/logo-footer.png) no-repeat;
+    margin: auto; }
+  .contact address {
+    font-style: normal; }
+  .contact .icon_sns .flaticon-social58:before {
+    font-size: 1.7rem; }
+  .contact .icon_sns li {
+    margin-bottom: 10px; }
+    .contact .icon_sns li a {
+      background: #d0b680;
+      width: 40px;
       display: block;
-      background: url(../images/logo-footer.png) no-repeat;
-      margin: auto; }
-    .footer_wrapper .contact h3 {
-      padding-top: 40px; }
-    .footer_wrapper .contact address {
-      font-style: normal; }
-    .footer_wrapper .contact .tel {
-      padding-top: 3px; }
-    .footer_wrapper .contact .fax {
-      padding-top: 3px; }
-    .footer_wrapper .contact .icon_sns ul {
-      width: 188px;
-      margin: auto !important; }
-    .footer_wrapper .contact .icon_sns li {
-      float: left;
-      padding-right: 12px; }
-      .footer_wrapper .contact .icon_sns li:last-child {
-        padding-right: 0; }
-      .footer_wrapper .contact .icon_sns li a {
-        width: 38px;
-        height: 0;
-        padding-top: 38px;
-        background: #c7b184;
-        overflow: hidden;
-        display: block;
-        -moz-border-radius: 24px;
-        -webkit-border-radius: 24px;
-        border-radius: 24px; }
-        .footer_wrapper .contact .icon_sns li a:hover {
-          background: #a78614; }
-  .footer_wrapper .footer_nav ul li a {
-    line-height: 26px; }
-  .footer_wrapper .destination {
-    background: #f2f0e9;
-    padding: 15px 10px;
-    border: solid 1px #FFF; }
-    .footer_wrapper .destination h2, .footer_wrapper .destination h3, .footer_wrapper .destination h4 {
-      font-size: 21px;
-      color: #7e796d;
-      line-height: 22px;
-      font-family: 'news_cycle';
-      font-weight: 600;
-      text-transform: uppercase; }
-    .footer_wrapper .destination h3, .footer_wrapper .destination h4 {
-      color: #9d7c36;
-      font-size: 15px;
-      font-weight: normal; }
-    .footer_wrapper .destination input[type=search] {
-      padding: 10px;
-      height: 25px; }
-    .footer_wrapper .destination button {
-      line-height: 0;
-      height: 25px; }
-    .footer_wrapper .destination ul {
-      line-height: 18px;
-      float: left;
-      margin-right: 15%; }
-  .footer_wrapper .end_footer {
-    background: #FFF; }
-    .footer_wrapper .end_footer ul li {
-      float: left;
-      padding-top: 9px;
-      margin-right: 2%; }
-    .footer_wrapper .end_footer .permit {
-      text-align: right;
-      font-size: 12px;
-      padding: 20px 0 20px 0;
-      color: #2a3740; }
-  @media only screen and (max-width: 40em) {
-    .footer_wrapper .contact {
-      padding-right: 0 !important; }
-      .footer_wrapper .contact .icon_sns {
-        padding-bottom: 60px; }
-    .footer_wrapper .footer_nav {
-      display: none; }
-    .footer_wrapper .end_footer ul {
-      margin-left: 15% !important; }
-      .footer_wrapper .end_footer ul li {
-        margin-right: 4%; }
-        .footer_wrapper .end_footer ul li img {
-          width: 100%; }
-    .footer_wrapper .end_footer .permit {
-      text-align: center; } }
+      -moz-border-radius: 24px;
+      -webkit-border-radius: 24px;
+      border-radius: 24px; }
+      .contact .icon_sns li a:hover {
+        background: #9d7c36; }
+    .contact .icon_sns li i:before {
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: normal;
+      text-align: center; }
+    .contact .icon_sns li span {
+      text-indent: -9999px;
+      display: inline-block;
+      height: 0;
+      width: 0; }
+  .contact .icon_sns .inline-center > li {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem; }
+
+.footer_nav ul li a {
+  line-height: 26px; }
+
+.destination {
+  background: #f2f0e9;
+  padding: 15px 10px;
+  border: solid 1px #FFF; }
+  .destination h2, .destination h3, .destination h4 {
+    font-size: 21px;
+    color: #7e796d;
+    line-height: 22px;
+    font-family: 'news_cycle';
+    font-weight: 600;
+    text-transform: uppercase; }
+  .destination h3, .destination h4 {
+    color: #9d7c36;
+    font-size: 15px;
+    font-weight: normal; }
+  .destination input[type=search] {
+    padding: 10px;
+    height: 25px; }
+  .destination button {
+    line-height: 0;
+    height: 25px; }
+  .destination ul {
+    line-height: 18px;
+    float: left;
+    margin-right: 15%; }
+
+.end_footer {
+  background: #FFF; }
+  .end_footer .permit {
+    text-align: right;
+    font-size: 12px;
+    padding: 20px 0 20px 0;
+    color: #2a3740; }
+
+@media only screen and (max-width: 40em) {
+  .contact {
+    padding-right: 0 !important; }
+    .contact .icon_sns {
+      padding-bottom: 60px; }
+  .footer_nav {
+    display: none; }
+  .end_footer .permit {
+    text-align: center; } }
